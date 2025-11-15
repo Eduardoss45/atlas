@@ -1,95 +1,110 @@
-# Word Info App
+# Atlas
 
-This project is a full-stack application that provides information about countries, including weather, timezone, economic indicators, images, and a summary from Wikipedia. It consists of a backend (Node.js with Express) and a frontend (Next.js).
+Este projeto é uma aplicação full stack que fornece informações sobre países, incluindo clima, fuso horário, indicadores econômicos, imagens e um resumo da Wikipédia. Ele é composto por um backend (Node.js com Express) e um frontend (Next.js).
 
-## Project Structure
+## Estrutura do Projeto
 
-- `backend/`: Contains the Node.js Express server.
-- `frontend/`: Contains the Next.js application.
+* `backend/`: Contém o servidor Node.js com Express.
+* `frontend/`: Contém a aplicação Next.js.
 
-## Getting Started
+## Primeiros Passos
 
-### Prerequisites
+### Pré-requisitos
 
-Before running the application, ensure you have the following installed:
+Antes de executar a aplicação, certifique-se de ter instalado:
 
-- Node.js (LTS version recommended)
-- npm or yarn
+* Node.js (versão LTS recomendada)
+* npm ou yarn
 
-### Backend Setup
+### Configuração do Backend
 
-1.  Navigate to the `backend` directory:
-    ```bash
-    cd backend
-    ```
-2.  Install dependencies:
-    ```bash
-    npm install
-    ```
-3.  Create a `.env` file in the `backend` directory with the following API keys:
-    ```
-    TZ_API_KEY=YOUR_TIMEZONEDB_API_KEY
-    IP_API_KEY=YOUR_IPINFO_API_KEY
-    PEXELS_API_KEY=YOUR_PEXELS_API_KEY
-    ```
-    -   **TimezoneDB API Key**: Obtain from [https://timezonedb.com/](https://timezonedb.com/)
-    -   **IPinfo API Key**: Obtain from [https://ipinfo.io/](https://ipinfo.io/)
-    -   **Pexels API Key**: Obtain from [https://www.pexels.com/api/](https://www.pexels.com/api/)
+1. Acesse o diretório `backend`:
 
-4.  Start the backend server:
-    ```bash
-    npm run dev
-    ```
-    The backend server will run on `http://localhost:3001`.
+   ```bash
+   cd backend
+   ```
 
-### Frontend Setup
+2. Instale as dependências:
 
-1.  Navigate to the `frontend` directory:
-    ```bash
-    cd frontend
-    ```
-2.  Install dependencies:
-    ```bash
-    npm install
-    ```
-3.  Start the frontend development server:
-    ```bash
-    npm run dev
-    ```
-    The frontend application will run on `http://localhost:3000`.
+   ```bash
+   npm install
+   ```
 
-## API Endpoints (Backend)
+3. Crie um arquivo `.env` dentro do diretório `backend` contendo suas chaves de API:
 
--   `GET /info/:pais`: Get comprehensive information about a specified country. Replace `:pais` with the country name in Portuguese (e.g., `/info/Brasil`).
+   ```
+   TZ_API_KEY=YOUR_TIMEZONEDB_API_KEY
+   IP_API_KEY=YOUR_IPINFO_API_KEY
+   PEXELS_API_KEY=YOUR_PEXELS_API_KEY
+   ```
 
-## Technologies Used
+   * **Chave da TimezoneDB:** Obtenha em [https://timezonedb.com](https://timezonedb.com)
+   * **Chave da IPinfo:** Obtenha em [https://ipinfo.io](https://ipinfo.io)
+   * **Chave da Pexels:** Obtenha em [https://www.pexels.com/api](https://www.pexels.com/api)
+
+4. Inicie o servidor backend:
+
+   ```bash
+   npm run dev
+   ```
+
+   O backend rodará em `http://localhost:3001`.
+
+### Configuração do Frontend
+
+1. Acesse o diretório `frontend`:
+
+   ```bash
+   cd frontend
+   ```
+
+2. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+3. Inicie o servidor de desenvolvimento:
+
+   ```bash
+   npm run dev
+   ```
+
+   O frontend rodará em `http://localhost:3000`.
+
+## Endpoints da API (Backend)
+
+* `GET /info/:pais`: Retorna informações completas sobre um país específico.
+  Substitua `:pais` pelo nome do país em português (ex.: `/info/Brasil`).
+
+## Tecnologias Utilizadas
 
 ### Backend
 
--   Node.js
--   Express.js
--   `cors`
--   `dotenv`
--   `node-fetch`
--   `nodemon` (for development)
+* Node.js
+* Express.js
+* `cors`
+* `dotenv`
+* `node-fetch`
+* `nodemon` (para desenvolvimento)
 
 ### Frontend
 
--   Next.js
--   React
--   Tailwind CSS
--   `@radix-ui/react-dialog`
--   `class-variance-authority`
--   `clsx`
--   `cmdk`
--   `lucide-react`
--   `recharts`
--   `tailwind-merge`
--   `typescript`
--   `eslint`
--   `postcss`
--   `autoprefixer`
+* Next.js
+* React
+* Tailwind CSS
+* `@radix-ui/react-dialog`
+* `class-variance-authority`
+* `clsx`
+* `cmdk`
+* `lucide-react`
+* `recharts`
+* `tailwind-merge`
+* TypeScript
+* ESLint
+* PostCSS
+* Autoprefixer
 
-## Contributing
+## Contribuição
 
-Feel free to contribute to this project by opening issues or submitting pull requests.
+Sinta-se à vontade para contribuir com o projeto abrindo issues ou enviando pull requests.
